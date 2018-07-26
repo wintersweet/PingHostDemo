@@ -24,6 +24,7 @@
 -(void)startPingWithUrl:(NSString*)url result:(void(^)(NSString* average,NSInteger failure))block
 {
    //似乎要导入这个库 libz.1.2.5
+   //*****功能很强大哦******//
    self.timeCount = 0;
     __weak PingServerResult *weakSelf = self;
    self.pingServices = [STDPingServices startPingAddress:url callbackHandler:^(STDPingItem *pingItem, NSArray *pingItems) {
